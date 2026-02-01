@@ -1,4 +1,4 @@
-const Index = () => {
+const Services = () => {
   const states = [
     { name: "Arizona", url: "https://hoardingcleanup.com/steri_clean_arizona_hoarding_cleanup" },
     { name: "California", url: "https://hoardingcleanup.com/steri_clean_california" },
@@ -50,29 +50,6 @@ const Index = () => {
     { label: "Help For Families", href: "/help-for-families" },
     { label: "Help For Hoarders", href: "/help-for-hoarders" },
     { label: "LINKS", href: "/links" },
-  ];
-
-  const testimonials = [
-    {
-      author: "C. Weston",
-      text: `Dear Mike, I wanted to let you know how thoroughly pleased I was with the cleaning job Steri-clean did at my apartment. You were so right about Eddie and Zach. Both young men were so pleasant, encouraging and hard working. Both would make excellent therapists should they choose a new line of work someday, but I would hope they don't as there are many out there like me who need their help. Eddie worked with me in my terribly cluttered room. He helped me move beyond my anxiety and get things organized all the while doing all the heavy work. All I had to do was say keep it, donate it or throw it away. Whenever I faltered, Eddie was there to make a quick, painless suggestion and that kept it easy.`
-    },
-    {
-      author: "A. Clamsey",
-      text: `Thank you for the referral to a company in our area. We didn't even know there were companies like this. The firm you referred us to was very professional and treated us as if we were part of their own family. The cleanup went quicker than I had ever imagined. My mother now has a safe and beautiful home again, just like when I lived there as a child. You provide a great service to those in need.`
-    },
-    {
-      author: "B. Simpleton",
-      text: `HoardingCleanup.com helped me find a wonderful cleaning company that we just had come out to our home. We were completely disgusted with the way our house had become so cluttered but couldn't seem to accomplish anything on our own. We made several attempts to clean without success. The cleaning crew arrived and in just the first day, they had half our house in tip top shape. They found things we didn't even know we had in there. Thanks again for referring us to them. They were fantastic!`
-    },
-    {
-      author: "J. Treevor",
-      text: `HoardingCleanup saved my home! I was facing eviction and despite making several attempts at cleaning my apartment, I just couldn't find the energy to make any progress. They sent me the information for a wonderful company. When they first arrived to meet with me, I was scared to death. They were the nicest people and immediately I felt a wave of calm wash over me. They provided me with a very fair estimate and I had them start within a few days. My landlord let me stay, and now I will never let it look like that again.`
-    },
-    {
-      author: "E. Allen",
-      text: `Cory, thank you for the referral. The company was better than you promised! I sincerely appreciate the work that you do, and your willingness to help others nationwide.`
-    },
   ];
 
   return (
@@ -130,7 +107,7 @@ const Index = () => {
                 <a 
                   href={link.href} 
                   className={`block px-3 py-2 text-xs md:text-sm font-medium rounded transition-colors ${
-                    link.href === "/" 
+                    link.href === "/services" 
                       ? "bg-accent text-accent-foreground" 
                       : "hover:bg-primary hover:text-primary-foreground"
                   }`}
@@ -201,100 +178,146 @@ const Index = () => {
 
           {/* Main Content */}
           <article className="lg:col-span-6 order-1 lg:order-2">
-            {/* Seasonal Message */}
-            <div className="bg-gradient-to-r from-accent/10 to-accent/5 border-l-4 border-accent rounded-r-lg p-6 mb-6">
-              <p className="text-lg font-bold text-primary">
-                Spring is in the air!! Spring cleaning can mean a completely NEW YOU!
-              </p>
+            {/* Page Title */}
+            <div className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground rounded-lg px-4 py-3 mb-6">
+              <h2 className="text-lg font-bold">
+                Hoarding Clean Up Services <span className="font-normal opacity-80">Hoarding Experts</span>
+              </h2>
             </div>
 
             {/* Main Description */}
-            <div className="prose prose-lg max-w-none text-foreground space-y-5 mb-8">
+            <div className="prose prose-lg max-w-none text-foreground space-y-4 mb-8">
               <p className="text-base leading-relaxed">
-                Are you ready for a new home and a new you? Its time to create new goals and envision a new clutter free home. Spring is the perfect time for a new cleaning plan! This time of year can also can bring on the potential of visitors which can cause great discomfort for someone with a cluttered home! It is one of the biggest times of the year that our organizing experts get called from all over the country to help clients remove clutter. Because for many, this time of year is motivating with visions of a fresh start. This inspires the desire to tackle any cleaning tasks, small or large, hoarding cleanup, or simple decluttering. But for others, this is a time that causes sadness and depression. For either scenario, we are here to help! We can get your apartment, condo, house, mobile home, trailer, hotel room, or whatever you call home back into a safe and functional state at your pace. Don't fear company coming over, WELCOME them in with an amazing home!
+                Hoarding cleanup is a specialized cleaning field. The companies across the nation that are listed in our database are not junk haulers and they are not a basic cleaning service. These companies specialize in hoarding clean up and can provide you with any or all of the following services:
               </p>
 
-              <p className="text-base leading-relaxed">
-                Hoarding Cleanup is a national database of qualified hoarding specialists including hoarding cleaning companies, hoarding therapists, and psychiatrists across the United States (and a few other countries) that are all familiar with the hoarding disorder.
-              </p>
+              {/* Services List */}
+              <ul className="space-y-2 text-base list-none pl-0">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <span>Live Call Center 8:00 AM to 5:00 PM All Time Zones (800) 462-7337</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <span>Hoarding and Clutter Clean up</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <a href="https://crimecleaners.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Biohazard Cleanup</a>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <span>
+                    <a href="https://rodentdroppingscleanup.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Rodent Cleanup</a>
+                    {" & "}
+                    <a href="https://pigeondroppingscleanup.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Pigeon Cleanup</a>
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <span>Triage and Sorting of Contents</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <span>Recovery of Valuables and Sentimental Items</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <span>Paperwork Recovery and Storage</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <span>Cleanup and Disposal of Animal and/or Human Waste</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <span>Appliance Recycling</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <span>E-Waste Recycling</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <span>Delivery of Storage Containers</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <span>Removal and Recycling of Non Running Vehicles</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <span>Photo/Video Documentation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <span>Itemized Inventory</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <span>Deep Cleaning</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <span>Home Repairs - Paint, Drywall, Carpet, Electrical, Plumbing, Etc.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary font-bold mt-0.5">•</span>
+                  <span>Additional Follow Up Care (home visits, meals, weekly cleaning/maintenance, therapists)</span>
+                </li>
+              </ul>
+            </div>
 
-              <p className="text-base leading-relaxed">
-                Hoarding Cleanup was developed by hoarding experts throughout the country to fill a huge void in finding qualified hoarding help. We created this site to help those suffering from hoarding and moderate to severe clutter, as well as their loved ones, find sincere and compassionate help no matter where they are located. Most of the cleaning companies listed on our site have been trained and certified by, or are a franchise of, Cory Chalmers, a nationally recognized hoarding expert in hoarding cleanup and the psychology behind the disorder. Mr. Chalmers has helped open people's eyes to just how common hoarding is by helping create, and is a regularly featured expert on, the A&E Emmy nominated TV series, "Hoarders", hosting 77 episodes over the past 15 seasons. Off the show, and even more impressive, is his companies success at cleaning over 40,000 hoarding homes throughout the United States over the past 30 years!
-              </p>
-
-              <p className="text-base leading-relaxed">
-                The resources on this site are all non-judgmental, compassionate, and ready to provide the necessary help for hoarders to succeed. One call to a HoardingCleanup.com listed company and you are on the road to a fresh start. Help for hoarders is now just a click away. If you or a loved one needs help with hoarding, let us assist them. From hoarding support groups and hoarding webinars to help with cleaning, organizing, and therapy, you can find the resources here.
-              </p>
-
-              <p className="text-base leading-relaxed">
-                Click <a href="https://hoardingcleanup.com/national_resources" className="text-primary font-semibold hover:underline">HERE</a> to be connected to our national database to find hoarding clean up help resources near you now.
+            {/* Video Call-to-Action */}
+            <div className="text-center mb-6">
+              <p className="text-base font-semibold text-foreground leading-relaxed">
+                We don't just clean homes, we literally transform LIVES! Watch this video below and listen to our customers and our team talka bout the difference Steri-Clean makes. Then call us to start your NEW LIFE at 1-800-462-7337!
               </p>
             </div>
 
             {/* Video Section */}
             <section className="mb-8" aria-labelledby="video-heading">
-              <h2 id="video-heading" className="sr-only">Company Introduction Video</h2>
+              <h3 id="video-heading" className="sr-only">Company Introduction Video</h3>
               <div className="relative aspect-video rounded-xl overflow-hidden shadow-xl bg-foreground/5">
                 <iframe 
                   width="100%" 
                   height="100%" 
-                  src="https://youtube.com/embed/hucIjMDtkQs?wmode=transparent" 
+                  src="https://youtube.com/embed/CeHZDoFhNFU?wmode=transparent" 
                   frameBorder="0" 
                   allowFullScreen
-                  title="Hoarding Cleanup | Steri Clean Inc"
+                  title="Steri-Clean, How We Change Lives"
                   className="absolute inset-0"
                 />
               </div>
             </section>
 
-            {/* Resources Grid */}
-            <section className="grid md:grid-cols-2 gap-4 mb-8" aria-labelledby="resources-heading">
-              <h2 id="resources-heading" className="sr-only">Quick Resources</h2>
-              <a 
-                href="http://hoardingcleanup.com/national_resources" 
-                className="group bg-card rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
-              >
-                <div className="bg-primary/10 p-6 text-center">
-                  <span className="text-xl font-bold text-primary group-hover:text-accent transition-colors">
-                    RESOURCES BY STATE
-                  </span>
-                  <p className="text-muted-foreground text-sm mt-2">(Click Here)</p>
-                </div>
-              </a>
-              <a 
-                href="http://hoardingcleanup.com/international_resources" 
-                className="group bg-card rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
-              >
-                <div className="bg-primary/10 p-6 text-center">
-                  <span className="text-xl font-bold text-primary group-hover:text-accent transition-colors">
-                    INTERNATIONAL HELP
-                  </span>
-                  <p className="text-muted-foreground text-sm mt-2">(Click Here)</p>
-                </div>
-              </a>
-            </section>
-
             {/* Photo Gallery Placeholder */}
             <section className="bg-card rounded-xl shadow-lg p-4 mb-6" aria-labelledby="gallery-heading">
-              <h2 id="gallery-heading" className="sr-only">Before and After Photos</h2>
-              <div className="grid grid-cols-4 gap-2">
-                {[1, 2, 3, 4].map((num) => (
+              <h3 id="gallery-heading" className="sr-only">Before and After Photos</h3>
+              <div className="grid grid-cols-3 gap-2 mb-4">
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((num) => (
                   <div key={num} className="aspect-square bg-muted rounded-lg flex items-center justify-center">
                     <span className="text-xs text-muted-foreground">Photo {num}</span>
                   </div>
                 ))}
               </div>
+              <div className="flex justify-center gap-2">
+                <span className="px-3 py-1 bg-card border border-border rounded text-sm">1</span>
+                <span className="px-3 py-1 bg-secondary rounded text-sm cursor-pointer hover:bg-muted">2</span>
+                <span className="px-3 py-1 bg-secondary rounded text-sm cursor-pointer hover:bg-muted">3</span>
+                <span className="px-3 py-1 bg-secondary rounded text-sm cursor-pointer hover:bg-muted">next</span>
+              </div>
             </section>
 
-            {/* Additional Info */}
-            <div className="prose prose-lg max-w-none text-foreground">
-              <p className="text-base leading-relaxed">
-                With an experienced company, hoarding clean up will go smoothly and efficiently. Hoarding cleanup not only entails clutter clean up, but the recovery of all the items in the home that are still useful, valuable and sentimental. A hoarding cleanup company should carry all insurances including general liability, workers compensation, automobile, and they must be bonded. If you find a hoarding cleanup company on this list to be anything but perfect, please let us know. We strive to keep our hoarding resources among the best in the nation. We know how hard is to find quality help for hoarders, so we update our list regularly to keep these hoarding resources accurate and up do date. Read through this site for many resources and useful tips on how to help a hoarder or how to help yourself!
-              </p>
+            {/* Large Preview Image Placeholder */}
+            <div className="bg-card rounded-xl shadow-lg overflow-hidden">
+              <div className="aspect-[4/3] bg-gradient-to-br from-muted to-secondary flex items-center justify-center">
+                <span className="text-muted-foreground">Before/After Preview Image</span>
+              </div>
             </div>
           </article>
 
-          {/* Right Sidebar - Resources & Testimonials */}
+          {/* Right Sidebar - Resources */}
           <aside className="lg:col-span-3 order-3" aria-labelledby="sidebar-heading">
             <div className="space-y-4 sticky top-20">
               <h2 id="sidebar-heading" className="text-base font-bold text-primary text-center leading-tight">
@@ -347,26 +370,9 @@ const Index = () => {
                 </a>
               </nav>
 
-              {/* Testimonials */}
-              <section className="bg-card rounded-xl shadow-lg p-4" aria-labelledby="testimonials-heading">
-                <h3 id="testimonials-heading" className="text-base font-bold text-primary mb-3">Testimonials</h3>
-                <div className="space-y-4 max-h-80 overflow-y-auto pr-2 text-sm">
-                  {testimonials.map((testimonial, index) => (
-                    <blockquote key={index} className="border-l-2 border-accent pl-3 py-1">
-                      <p className="text-foreground/80 italic leading-relaxed text-xs">
-                        "{testimonial.text}"
-                      </p>
-                      <footer className="mt-1 text-xs font-medium text-primary">
-                        — {testimonial.author}
-                      </footer>
-                    </blockquote>
-                  ))}
-                </div>
-              </section>
-
               {/* Visitor Counter */}
               <div className="bg-card rounded-lg shadow-md p-3 text-center border border-border">
-                <div className="font-mono text-lg tracking-wider text-foreground">13929074</div>
+                <div className="font-mono text-lg tracking-wider text-foreground">13929106</div>
               </div>
             </div>
           </aside>
@@ -410,4 +416,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Services;
