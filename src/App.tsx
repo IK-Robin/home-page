@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import NationalResources from "./pages/NationalResources";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
+import HoardingSupportGroup from "./pages/HoardingSupportGroup";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/national-resources" element={<NationalResources />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/hoarding-support-group" element={<HoardingSupportGroup />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
