@@ -48,7 +48,7 @@ const HelpForFamilies = () => {
     { label: "HOARDING SUPPORT GROUP", href: "/hoarding-support-group", alt: "Support Group" },
     { label: "MESSAGE BOARD", href: "/message-board", alt: "Message Board" },
     { label: "HELP FOR FAMILIES", href: "/help-for-families", alt: "For Families", active: true },
-    { label: "HELP FOR HOARDERS", href: "https://www.hoardingcleanup.com/help-for-hoarders", alt: "Help For Hoarders" },
+    { label: "HELP FOR HOARDERS", href: "/help-for-hoarders", alt: "Help For Hoarders" },
     { label: "LINKS", href: "https://www.hoardingcleanup.com/links", alt: "Hoarding Help for Hoarders, Resources, Hoarding Cleanup, Clutter Clean up" },
   ];
 
@@ -61,7 +61,7 @@ const HelpForFamilies = () => {
     { label: "Hoarding Support Group", href: "/hoarding-support-group" },
     { label: "Message Board", href: "/message-board" },
     { label: "Help For Families", href: "/help-for-families" },
-    { label: "Help For Hoarders", href: "https://www.hoardingcleanup.com/help-for-hoarders" },
+    { label: "Help For Hoarders", href: "/help-for-hoarders" },
     { label: "LINKS", href: "https://www.hoardingcleanup.com/links" },
   ];
 
