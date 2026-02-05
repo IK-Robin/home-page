@@ -67,64 +67,63 @@ const NationalResources = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Skip to main content */}
-      <a href="#emain" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-primary-foreground px-4 py-2 rounded-md z-50">
+      {/* Skip to main content - Accessibility */}
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-primary-foreground px-4 py-2 rounded-md z-50">
         Skip to main content
       </a>
 
-      {/* Top Quick Bar */}
-      <div className="bg-[hsl(210,50%,20%)] text-white">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="flex justify-end items-center py-2 space-x-4 text-sm">
-            <a href="https://www.hoardingcleanup.com/site_map" className="hover:text-accent transition-colors flex items-center gap-1">
-              <span className="text-xs">★</span> site map
+      {/* Top Bar */}
+      <header className="bg-primary text-primary-foreground">
+        <div className="max-w-7xl mx-auto px-4 py-2">
+          <div className="flex items-center justify-end text-sm gap-4">
+            <a href="/site_map" className="hover:underline flex items-center gap-1" aria-label="Site map">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+              </svg>
+              site map
             </a>
-            <span className="text-muted-foreground">|</span>
-            <a href="https://www.hoardingcleanup.com/contact" className="hover:text-accent transition-colors flex items-center gap-1">
-              <span className="text-xs">✉</span> contact
+            <a href="/contact" className="hover:underline flex items-center gap-1" aria-label="Contact us">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              contact
             </a>
           </div>
         </div>
-      </div>
-
-      {/* Header Banner */}
-      <header className="bg-[hsl(210,50%,20%)]">
-        <div className="max-w-5xl mx-auto">
-          <a href="/" className="block" aria-label="Hoarding Cleanup Home">
-            <div 
-              className="h-28 md:h-32 bg-cover bg-center bg-no-repeat flex items-center justify-center"
-              style={{
-                backgroundImage: "linear-gradient(135deg, hsl(210 50% 25%) 0%, hsl(120 30% 35%) 50%, hsl(35 60% 50%) 100%)"
-              }}
-            >
-              <div className="text-center">
-                <h1 className="text-3xl md:text-4xl font-bold text-white tracking-wide" style={{ fontFamily: "'Arial Black', sans-serif" }}>
-                  HOARDING<br />
-                  <span className="text-2xl md:text-3xl font-bold">CLEANUP</span>
-                </h1>
-                <p className="text-white text-sm md:text-base mt-1">
-                  <span className="font-bold">(800) 462-7337</span>
-                  <span className="ml-2 text-xs md:text-sm">Nationwide Directory</span>
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
       </header>
 
-      {/* Navigation Menu */}
-      <nav className="bg-black" aria-label="Main navigation">
-        <div className="max-w-5xl mx-auto px-2">
+      {/* Hero Banner */}
+      <section className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground py-8 md:py-12">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h1 className="text-3xl md:text-5xl font-bold mb-3 tracking-tight">
+            HOARDING CLEANUP
+          </h1>
+          <p className="text-lg md:text-2xl mb-4 opacity-90">
+            Nationwide Directory
+          </p>
+          <a 
+            href="tel:1-800-462-7337" 
+            className="inline-block text-2xl md:text-4xl font-bold hover:opacity-80 transition-opacity"
+            aria-label="Call us at 800-462-7337"
+          >
+            (800) 462-7337
+          </a>
+        </div>
+      </section>
+
+      {/* Navigation Bar */}
+      <nav className="bg-foreground text-background sticky top-0 z-40 shadow-lg" aria-label="Main navigation">
+        <div className="max-w-7xl mx-auto px-4">
           <ul className="flex flex-wrap justify-center gap-1 py-2">
             {navItems.map((item) => (
               <li key={item.label}>
                 <a
                   href={item.href}
                   title={item.alt}
-                  className={`inline-block px-2 py-1.5 text-xs font-medium rounded transition-colors ${
+                  className={`block px-3 py-2 text-xs md:text-sm font-medium rounded transition-colors ${
                     item.active 
-                      ? "bg-primary text-primary-foreground" 
-                      : "bg-muted text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+                      ? "bg-accent text-accent-foreground" 
+                      : "hover:bg-primary hover:text-primary-foreground"
                   }`}
                 >
                   {item.label}
@@ -135,11 +134,8 @@ const NationalResources = () => {
         </div>
       </nav>
 
-      {/* Decorative Top Border */}
-      <div className="bg-gradient-to-r from-primary via-accent to-primary h-2"></div>
-
       {/* Main Content Area */}
-      <main id="emain" className="max-w-5xl mx-auto px-4 py-8">
+      <main id="main-content" className="max-w-7xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           
           {/* Left Sidebar - State Locations */}
@@ -346,26 +342,20 @@ const NationalResources = () => {
         </div>
       </main>
 
-      {/* Decorative Bottom Border */}
-      <div className="bg-gradient-to-r from-primary via-accent to-primary h-2"></div>
-
       {/* Footer */}
-      <footer className="bg-black text-white py-6">
-        <div className="max-w-5xl mx-auto px-4">
+      <footer className="bg-foreground text-background py-8 mt-12">
+        <div className="max-w-7xl mx-auto px-4">
           {/* Footer Navigation */}
           <nav aria-label="Footer navigation" className="mb-6">
-            <ul className="flex flex-wrap justify-center gap-2 text-sm">
-              {footerLinks.map((link, index) => (
-                <li key={link.label} className="flex items-center">
+            <ul className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm">
+              {footerLinks.map((link) => (
+                <li key={link.label}>
                   <a 
                     href={link.href}
-                    className="text-muted-foreground hover:text-white transition-colors"
+                    className="hover:text-accent transition-colors"
                   >
                     {link.label}
                   </a>
-                  {index < footerLinks.length - 1 && (
-                    <span className="text-muted-foreground ml-2">|</span>
-                  )}
                 </li>
               ))}
             </ul>
@@ -375,7 +365,7 @@ const NationalResources = () => {
           <div className="text-center mb-4">
             <a 
               href="https://www.hoardingcleanup.com/inc/UserReg"
-              className="text-muted-foreground hover:text-white transition-colors text-sm"
+              className="hover:text-accent transition-colors text-sm"
             >
               Site Mailing List
             </a>
@@ -383,18 +373,18 @@ const NationalResources = () => {
 
           {/* Tagline & Company Info */}
           <div className="text-center">
-            <p className="text-muted-foreground italic mb-4">"Cleaning with Care and Compassion TM"</p>
+            <p className="italic mb-4 opacity-80">"Cleaning with Care and Compassion TM"</p>
             <p className="text-lg font-bold mb-1">Hoarding Cleanup</p>
-            <p className="text-muted-foreground mb-4">Nationwide Hoarding Resources Directory</p>
-            <p className="text-sm text-muted-foreground">Copyright 2009 - 2024 HoardingCleanup.com</p>
+            <p className="opacity-80 mb-4">Nationwide Hoarding Resources Directory</p>
+            <p className="text-sm opacity-60">Copyright 2009 - 2024 HoardingCleanup.com</p>
           </div>
 
           {/* Powered By */}
-          <div className="text-center mt-6 text-xs text-muted-foreground">
+          <div className="text-center mt-6 text-xs opacity-60">
             <p>Design Your Own Website, Today!</p>
             <a 
               href="http://www.ibuilt.net/" 
-              className="hover:text-white transition-colors"
+              className="hover:text-accent transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
