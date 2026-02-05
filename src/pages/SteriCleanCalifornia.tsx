@@ -65,6 +65,7 @@ const SteriCleanCalifornia = () => {
           
           {/* Left Sidebar */}
           <aside className="lg:w-36 flex-shrink-0" aria-label="Steri-Clean Locations">
+            <div className="sticky top-20">
             <div className="mb-6 text-center">
               <h2 className="text-lg font-bold text-[hsl(0,100%,30%)] mb-2">Hoarding Cleanup Service<br/>Steri-Clean Locations</h2>
             </div>
@@ -77,7 +78,7 @@ const SteriCleanCalifornia = () => {
               />
             </div>
             
-            <nav className="text-base space-y-1" aria-label="State locations">
+            <nav className="text-base space-y-1 max-h-[50vh] overflow-y-auto" aria-label="State locations">
               <a href="https://hoardingcleanup.com/steri_clean_arizona_hoarding_cleanup" className="block text-[hsl(0,100%,30%)] hover:underline">Arizona</a>
               <a href="https://hoardingcleanup.com/steri_clean_california" className="block text-[hsl(0,100%,30%)] hover:underline font-bold">California</a>
               <a href="https://hoardingcleanup.com/steri_clean_colorado" className="block text-[hsl(0,100%,30%)] hover:underline">Colorado</a>
@@ -129,10 +130,11 @@ const SteriCleanCalifornia = () => {
                 <img src="https://hoardingcleanup.com/i/u/10021204/i/Hoarding_Clean_Up_Help_2.png" alt="Crime Scene Cleanup Franchise" className="w-full" />
               </a>
             </div>
+            </div>
           </aside>
 
           {/* Main Content */}
-          <main id="main-content" className="flex-1">
+          <main id="main-content" className="flex-1 max-h-[calc(100vh-200px)] overflow-y-auto lg:max-h-none lg:overflow-visible">
             {/* Hero Section */}
             <section className="text-center mb-8">
               <img 
