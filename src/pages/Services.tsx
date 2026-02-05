@@ -43,7 +43,7 @@ const Services = () => {
     { label: "Hoarding Help Home", href: "/" },
     { label: "Services", href: "/services" },
     { label: "National Resources", href: "/national-resources" },
-    { label: "About Us", href: "/about_us" },
+    { label: "About Us", href: "/about-us" },
     { label: "Contact", href: "/contact" },
     { label: "Hoarding Support Group", href: "/hoarding_support_group" },
     { label: "Message Board", href: "/message-board" },
