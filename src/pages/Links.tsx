@@ -1,4 +1,4 @@
-const HelpForHoarders = () => {
+const Links = () => {
   const stateLocations = [
     { name: "Arizona", href: "https://hoardingcleanup.com/steri_clean_arizona_hoarding_cleanup" },
     { name: "California", href: "https://hoardingcleanup.com/steri_clean_california" },
@@ -48,8 +48,8 @@ const HelpForHoarders = () => {
     { label: "HOARDING SUPPORT GROUP", href: "/hoarding-support-group", alt: "Support Group" },
     { label: "MESSAGE BOARD", href: "/message-board", alt: "Message Board" },
     { label: "HELP FOR FAMILIES", href: "/help-for-families", alt: "For Families" },
-    { label: "HELP FOR HOARDERS", href: "/help-for-hoarders", alt: "Help For Hoarders", active: true },
-    { label: "LINKS", href: "/links", alt: "Hoarding Help for Hoarders, Resources, Hoarding Cleanup, Clutter Clean up" },
+    { label: "HELP FOR HOARDERS", href: "/help-for-hoarders", alt: "Help For Hoarders" },
+    { label: "LINKS", href: "/links", alt: "Hoarding Help for Hoarders, Resources, Hoarding Cleanup, Clutter Clean up", active: true },
   ];
 
   const footerLinks = [
@@ -63,6 +63,55 @@ const HelpForHoarders = () => {
     { label: "Help For Families", href: "/help-for-families" },
     { label: "Help For Hoarders", href: "/help-for-hoarders" },
     { label: "LINKS", href: "/links" },
+  ];
+
+  const resourceLinks = [
+    {
+      title: "Hoarders.com",
+      description: "Hoarders.com is the nation's leader in hoarding cleanup, clutter removal, and organization. Since 1995, they have helped over 40,000 families across the United States regain control of their homes and lives. They developed this national assistance website so that hoarders and their loved ones anywhere in the country can begin the healing process.",
+      subtext: "For help with any hoarding issues, contact us at 1-800-HOARDERS (800-462-7337).",
+      url: "https://HOARDERS.com",
+      urlDisplay: "https://HOARDERS.com"
+    },
+    {
+      title: "Institute For Challenging Disorganization",
+      description: "The Institute for Challenging Disorganization is a non-profit educational organization whose mission is to provide education, research and strategies to benefit people challenged by chronic disorganization. Great fact sheets and a clutter hoarding scale.",
+      url: "https://www.challengingdisorganization.org/",
+      urlDisplay: "https://www.challengingdisorganization.org/"
+    },
+    {
+      title: "Children of Hoarders",
+      description: "Children of Hoarders is one of the most informative websites on the internet about hoarding. Developed by a child of a hoarder, it is full of information about help for hoarders and their families.",
+      url: "https://www.childrenofhoarders.com/",
+      urlDisplay: "https://www.childrenofhoarders.com/"
+    },
+    {
+      title: "The Obsessive Compulsive Foundation",
+      description: "",
+      url: "https://www.ocfoundation.org/",
+      urlDisplay: "https://www.ocfoundation.org/"
+    },
+    {
+      title: "Orange County Task Force on Hoarding",
+      description: "The Orange County Task Force on Hoarding is a collaborative effort of diverse community organizations and representatives who seek to identify and understand the issues, difficulties and causes of human hoarding behavior, to educate the public of these behaviors, and to develop humane options and unnovative interventions.",
+      phone: "714-972-3200",
+      url: "https://ochoardingtaskforce.org",
+      urlDisplay: "https://ochoardingtaskforce.org"
+    },
+    {
+      title: "Crime Scene Steri-Clean",
+      description: "Crime Scene Steri-Clean, LLC assists in the decontamination of homes affected by biohazardous waste and medical waste. Many homes of hoarders contain rodent waste, animal waste, needles, bacteria, viruses and other potentially infectious materials. Contact the professionals to properly and legally restore a safe environment.",
+      phone: "(888) 577-7206",
+      phoneLabel: "Their 24 hour help line is (888) 577-7206.",
+      url: "https://www.CrimeCleaners.com",
+      urlDisplay: "https://www.CrimeCleaners.com"
+    },
+    {
+      title: "Steri-Clean",
+      description: "Steri-Clean is the nations leader in Extreme Cleaning situations, ranging from hoarding homes and biohazards, to meth labs and homeless encampments. With over 63 locations to assist you, they are the perfect solution for your difficult cleaning needs. Call Steri-Cleans 24 hour call center at (800) 462-7337.",
+      url: "https://Steri-Clean.com/",
+      urlDisplay: "https://Steri-Clean.com/"
+    }
   ];
 
   return (
@@ -226,74 +275,82 @@ const HelpForHoarders = () => {
             {/* Section Header */}
             <div className="bg-gradient-to-r from-primary to-primary/80 text-white px-4 py-2 rounded-t-lg mb-6">
               <h2 className="text-lg font-semibold">
-                Help For Hoarders <span className="text-accent">Call Today (800) 462-7337</span>
+                LINKS
               </h2>
             </div>
 
-            {/* YouTube Video Embed */}
+            {/* Main Heading */}
+            <div className="text-center mb-8">
+              <h1 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+                Other Hoarding Resources
+              </h1>
+              <p className="text-base text-foreground">
+                This page will direct you to many helpful resources. If you have some to add, please let us know!
+              </p>
+            </div>
+
+            {/* Hero Image Placeholder */}
             <div className="mb-8">
-              <div className="aspect-video bg-black rounded-lg overflow-hidden shadow-lg">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/nGEiVxZlT0g"
-                  title="Steri-Clean, How We Change Lives"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                ></iframe>
+              <div className="bg-muted rounded-lg p-8 aspect-video flex items-center justify-center">
+                <div className="text-center">
+                  <p className="text-2xl font-bold text-foreground mb-2">HERE'S TO A NEW YOU</p>
+                  <p className="text-muted-foreground">CONTACT US</p>
+                  <div className="mt-4 text-sm text-muted-foreground">
+                    <span>TRUST THE EXPERTS</span>
+                    <span className="mx-4">since 1995</span>
+                    <span>25,000+ homes cleaned</span>
+                    <span className="mx-4">40+ states served</span>
+                  </div>
+                  <p className="mt-4 text-lg font-semibold text-foreground">WE DELIVER NEW BEGINNINGS</p>
+                </div>
               </div>
             </div>
 
-            {/* Main Content */}
-            <article className="prose prose-lg max-w-none">
-              <h1 className="text-2xl md:text-3xl font-bold text-primary mb-6">
-                Help For Hoarders...Are You Ready Yet?
-              </h1>
-
-              <div className="space-y-4 text-foreground leading-relaxed">
-                <p className="text-base">
-                  Many people that suffer from clutter and hoarding, simply don't know where to start. If you are on this site reading this, that is the first step! If you are what would be considered a hoarder, you have probably been struggling with many emotions for years. You are also most likely aware that your living conditions are not what is considered "normal", but it is out of your control. There are many different reasons people begin collecting things that may or may not be valuable, sentimental or even useful. You have probably isolated yourself from friends and/or family because of the embarrassment of how your home looks or because they simply don't understand. You stopped inviting people in. You lie and make excuses. You become defensive when questioned about your hoarding. What started out small has become so overwhelming, you don't know where to turn. Your family may have given up, and you yourself may have as well. However, we will not give up. We see this all the time and know that we can help you make a change. You need to know you are not alone. Hoarding affects literally millions of people across the United States. It is very common!
-                </p>
-
-                <p className="text-base">
-                  It is never too late to correct this problem and begin a new life. We have helped thousands of families across the nation by providing not just the cleanup of their hoarded home, but the most important part of follow up and after care. We can provide you with therapists in your area that are trained in this specialized area. We can provide weekly, bimonthly, or monthly housekeeping. Hoarding becomes a way of life and you can't just expect it to be cured overnight. I like to tell people that it is similar to taking a bottle from an alcoholic. That doesn't mean they won't go get another bottle. We will help you through this, but it is only going to happen if you are ready to change. It is a commitment you need to make to yourself, before anyone else. If you are tired of your current lifestyle, and WANT to change, please contact us and we can give you the information you need to get started. Don't give up on yourself. You deserve better.
-                </p>
-
-                <p className="text-base">
-                  Want a place to talk to other hoarders, ask for advice or just vent a little? Please join us every Sunday evening on our online hoarding support group. Just come back to our site and click on the online support group tab on the right side of any page!
-                </p>
-              </div>
-
-              {/* Before/After Images Section */}
-              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="bg-muted rounded-lg p-4 aspect-[4/3] flex items-center justify-center">
-                    <span className="text-muted-foreground">Hoarding Cleanup Before Image</span>
+            {/* Resource Links */}
+            <div className="space-y-8">
+              {resourceLinks.map((resource, index) => (
+                <div key={index} className="border-b border-border pb-8 last:border-b-0">
+                  <h3 className="text-xl md:text-2xl font-bold text-primary text-center mb-4">
+                    {resource.title}
+                  </h3>
+                  
+                  {resource.description && (
+                    <p className="text-base text-foreground text-center mb-3 leading-relaxed">
+                      {resource.description}
+                    </p>
+                  )}
+                  
+                  {resource.subtext && (
+                    <p className="text-base text-foreground text-center mb-3">
+                      {resource.subtext}
+                    </p>
+                  )}
+                  
+                  {resource.phoneLabel && (
+                    <p className="text-base text-foreground text-center mb-2">
+                      {resource.phoneLabel}
+                    </p>
+                  )}
+                  
+                  {resource.phone && !resource.phoneLabel && (
+                    <p className="text-base font-semibold text-foreground text-center mb-2">
+                      {resource.phone}
+                    </p>
+                  )}
+                  
+                  <div className="text-center">
+                    <a 
+                      href={resource.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-accent hover:underline transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
+                    >
+                      {resource.urlDisplay}
+                    </a>
                   </div>
                 </div>
-                <div className="text-center">
-                  <div className="bg-muted rounded-lg p-4 aspect-[4/3] flex items-center justify-center">
-                    <span className="text-muted-foreground">Hoarding Cleanup After Image</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Tagline */}
-              <div className="mt-8 text-center">
-                <h3 className="text-2xl md:text-3xl font-bold text-destructive">
-                  We Restore Lives, but the homes look GREAT too!
-                </h3>
-              </div>
-
-              {/* Additional Content */}
-              <div className="mt-8 space-y-4 text-foreground leading-relaxed">
-                <p className="text-base">
-                  We have been providing help for hoarders since 1995. No other company in Nation is as knowledgeable as we are when it comes to hoarding remediation. If you are looking for help for hoarders, please email us at your convenience.
-                </p>
-              </div>
-            </article>
+              ))}
+            </div>
           </section>
 
           {/* Right Sidebar - Interactive Help */}
@@ -307,7 +364,7 @@ const HelpForHoarders = () => {
 
               {/* Leave a Message */}
               <a 
-                href="http://hoardingcleanup.com/contact"
+                href="/contact"
                 className="block bg-gradient-to-r from-muted to-muted/80 text-foreground rounded-lg p-3 text-center font-bold hover:opacity-90 transition-opacity shadow-md mb-4 border border-border"
                 aria-label="Please Leave a Message"
               >
@@ -363,7 +420,7 @@ const HelpForHoarders = () => {
                 {/* Visitor Counter */}
                 <div className="bg-muted rounded-lg p-3 text-center">
                   <div className="font-mono text-lg font-bold text-foreground tracking-wider">
-                    15943537
+                    13942892
                   </div>
                 </div>
               </div>
@@ -428,4 +485,4 @@ const HelpForHoarders = () => {
   );
 };
 
-export default HelpForHoarders;
+export default Links;
