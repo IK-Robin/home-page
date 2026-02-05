@@ -16,6 +16,7 @@ import Links from "./pages/Links";
 import Webinars from "./pages/Webinars";
 import HoardersTvShow from "./pages/HoardersTvShow";
 import ChatRoom from "./pages/ChatRoom";
+import SteriCleanCalifornia from "./pages/SteriCleanCalifornia";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +41,7 @@ const App = () => (
           <Route path="/webinars" element={<Webinars />} />
           <Route path="/hoarders-tv-show" element={<HoardersTvShow />} />
           <Route path="/chat-room" element={<ChatRoom />} />
+          <Route path="/steri-clean-california" element={<SteriCleanCalifornia />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
