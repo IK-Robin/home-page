@@ -45,7 +45,7 @@ const Contact = () => {
     { label: "National Resources", href: "/national-resources" },
     { label: "About Us", href: "/about-us" },
     { label: "Contact", href: "/contact" },
-    { label: "Hoarding Support Group", href: "/hoarding_support_group" },
+    { label: "Hoarding Support Group", href: "/hoarding-support-group" },
     { label: "Message Board", href: "/message-board" },
     { label: "Help For Families", href: "/help-for-families" },
     { label: "Help For Hoarders", href: "/help-for-hoarders" },
