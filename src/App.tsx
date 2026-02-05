@@ -12,6 +12,7 @@ import HoardingSupportGroup from "./pages/HoardingSupportGroup";
 import MessageBoard from "./pages/MessageBoard";
 import HelpForFamilies from "./pages/HelpForFamilies";
 import HelpForHoarders from "./pages/HelpForHoarders";
+import Links from "./pages/Links";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/message-board" element={<MessageBoard />} />
           <Route path="/help-for-families" element={<HelpForFamilies />} />
           <Route path="/help-for-hoarders" element={<HelpForHoarders />} />
+          <Route path="/links" element={<Links />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

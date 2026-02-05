@@ -49,7 +49,7 @@ const HelpForFamilies = () => {
     { label: "MESSAGE BOARD", href: "/message-board", alt: "Message Board" },
     { label: "HELP FOR FAMILIES", href: "/help-for-families", alt: "For Families", active: true },
     { label: "HELP FOR HOARDERS", href: "/help-for-hoarders", alt: "Help For Hoarders" },
-    { label: "LINKS", href: "https://www.hoardingcleanup.com/links", alt: "Hoarding Help for Hoarders, Resources, Hoarding Cleanup, Clutter Clean up" },
+    { label: "LINKS", href: "/links", alt: "Hoarding Help for Hoarders, Resources, Hoarding Cleanup, Clutter Clean up" },
   ];
 
   const footerLinks = [
@@ -62,7 +62,7 @@ const HelpForFamilies = () => {
     { label: "Message Board", href: "/message-board" },
     { label: "Help For Families", href: "/help-for-families" },
     { label: "Help For Hoarders", href: "/help-for-hoarders" },
-    { label: "LINKS", href: "https://www.hoardingcleanup.com/links" },
+    { label: "LINKS", href: "/links" },
   ];
 
   const hoardingReasons = [
