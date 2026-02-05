@@ -60,81 +60,91 @@ const SteriCleanCalifornia = () => {
       <div className="bg-gradient-to-r from-[hsl(210,70%,35%)] to-[hsl(160,55%,42%)] h-16"></div>
 
       {/* Main Content Area */}
-      <div className="max-w-5xl mx-auto px-4 py-6 bg-white">
-        <div className="flex flex-col lg:flex-row gap-6">
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="grid lg:grid-cols-12 gap-6">
           
           {/* Left Sidebar */}
-          <aside className="lg:w-36 flex-shrink-0" aria-label="Steri-Clean Locations">
-            <div className="sticky top-20">
-            <div className="mb-6 text-center">
-              <h2 className="text-lg font-bold text-[hsl(0,100%,30%)] mb-2">Hoarding Cleanup Service<br/>Steri-Clean Locations</h2>
-            </div>
-            
-            <div className="mb-6">
-              <img 
-                src="https://hoardingcleanup.com/i/u/10021204/i/Steri-Clean_Location_Header_Hoarding_Cleanup.png" 
-                alt="Steri-Clean Location Header" 
-                className="w-full"
-              />
-            </div>
-            
-            <nav className="text-base space-y-1 max-h-[50vh] overflow-y-auto" aria-label="State locations">
-              <a href="https://hoardingcleanup.com/steri_clean_arizona_hoarding_cleanup" className="block text-[hsl(0,100%,30%)] hover:underline">Arizona</a>
-              <a href="https://hoardingcleanup.com/steri_clean_california" className="block text-[hsl(0,100%,30%)] hover:underline font-bold">California</a>
-              <a href="https://hoardingcleanup.com/steri_clean_colorado" className="block text-[hsl(0,100%,30%)] hover:underline">Colorado</a>
-              <a href="http://hoardingcleanup.com/steri_clean_connecticut" className="block text-[hsl(0,100%,30%)] hover:underline">Connecticut</a>
-              <a href="https://hoardingcleanup.com/steri_clean_delaware_hoarding_clean_up" className="block text-[hsl(0,100%,30%)] hover:underline">Delaware</a>
-              <a href="https://hoardingcleanup.com/steri_clean_florida/" className="block text-[hsl(0,100%,30%)] hover:underline">Florida</a>
-              <a href="https://hoardingcleanup.com/steri_clean_georgia" className="block text-[hsl(0,100%,30%)] hover:underline">Georgia</a>
-              <a href="https://hoardingcleanup.com/idaho/" className="block text-[hsl(0,100%,30%)] hover:underline">Idaho</a>
-              <a href="https://hoardingcleanup.com/steri_clean_illinois" className="block text-[hsl(0,100%,30%)] hover:underline">Illinois</a>
-              <a href="https://hoardingcleanup.com/steri_clean_indiana" className="block text-[hsl(0,100%,30%)] hover:underline">Indiana</a>
-              <a href="https://hoardingcleanup.com/steri_clean_iowa/" className="block text-[hsl(0,100%,30%)] hover:underline">Iowa</a>
-              <a href="https://hoardingcleanup.com/steri_clean_kansas" className="block text-[hsl(0,100%,30%)] hover:underline">Kansas</a>
-              <a href="https://hoardingcleanup.com/steri_clean1" className="block text-[hsl(0,100%,30%)] hover:underline">Kentucky</a>
-              <a href="https://hoardingcleanup.com/steri_clean_new_england/" className="block text-[hsl(0,100%,30%)] hover:underline">Maine</a>
-              <a href="https://hoardingcleanup.com/steri_clean_maryland" className="block text-[hsl(0,100%,30%)] hover:underline">Maryland</a>
-              <a href="https://hoardingcleanup.com/steri_clean_massachusetts/" className="block text-[hsl(0,100%,30%)] hover:underline">Massachusetts</a>
-              <a href="https://hoardingcleanup.com/steri_clean_michigan" className="block text-[hsl(0,100%,30%)] hover:underline">Michigan</a>
-              <a href="https://hoardingcleanup.com/steri_clean_minnesota/" className="block text-[hsl(0,100%,30%)] hover:underline">Minnesota</a>
-              <a href="https://hoardingcleanup.com/steri_clean_missouri" className="block text-[hsl(0,100%,30%)] hover:underline">Missouri</a>
-              <a href="https://hoardingcleanup.com/steri_clean_nebraska" className="block text-[hsl(0,100%,30%)] hover:underline">Nebraska</a>
-              <a href="https://hoardingcleanup.com/steri-clean-las-vegas" className="block text-[hsl(0,100%,30%)] hover:underline">Nevada</a>
-              <a href="https://hoardingcleanup.com/steri_clean_new_england/" className="block text-[hsl(0,100%,30%)] hover:underline">New Hampshire</a>
-              <a href="https://hoardingcleanup.com/steri_clean_new_jersey" className="block text-[hsl(0,100%,30%)] hover:underline">New Jersey</a>
-              <a href="https://hoardingcleanup.com/steri_clean_new_york" className="block text-[hsl(0,100%,30%)] hover:underline">New York</a>
-              <a href="https://hoardingcleanup.com/steri_clean_north_carolina" className="block text-[hsl(0,100%,30%)] hover:underline">North Carolina</a>
-              <a href="https://hoardingcleanup.com/steri_clean_ohio" className="block text-[hsl(0,100%,30%)] hover:underline">Ohio</a>
-              <a href="https://hoardingcleanup.com/steri_clean_oregon" className="block text-[hsl(0,100%,30%)] hover:underline">Oregon</a>
-              <a href="https://hoardingcleanup.com/steri_clean_pennsylvania" className="block text-[hsl(0,100%,30%)] hover:underline">Pennsylvania</a>
-              <a href="https://hoardingcleanup.com/steri_clean_rhode_island" className="block text-[hsl(0,100%,30%)] hover:underline">Rhode Island</a>
-              <a href="https://hoardingcleanup.com/steri_clean_south_carolina" className="block text-[hsl(0,100%,30%)] hover:underline">South Carolina</a>
-              <a href="https://hoardingcleanup.com/steri-clean-south-dakota/" className="block text-[hsl(0,100%,30%)] hover:underline">South Dakota</a>
-              <a href="https://hoardingcleanup.com/steri_clean_texas" className="block text-[hsl(0,100%,30%)] hover:underline">Texas</a>
-              <a href="https://hoardingcleanup.com/steri_clean_utah" className="block text-[hsl(0,100%,30%)] hover:underline">Utah</a>
-              <a href="https://hoardingcleanup.com/steri_clean_new_england/" className="block text-[hsl(0,100%,30%)] hover:underline">Vermont</a>
-              <a href="https://hoardingcleanup.com/steri_clean_virginia" className="block text-[hsl(0,100%,30%)] hover:underline">Virginia</a>
-              <a href="https://hoardingcleanup.com/steri_clean_washington" className="block text-[hsl(0,100%,30%)] hover:underline">Washington</a>
-              <a href="https://hoardingcleanup.com/steri-clean-west-virginia" className="block text-[hsl(0,100%,30%)] hover:underline underline">West Virginia</a>
-            </nav>
+          <aside className="lg:col-span-3 order-2 lg:order-1" aria-labelledby="locations-heading">
+            <div className="bg-card rounded-xl shadow-lg p-5 sticky top-20">
+              <h2 id="locations-heading" className="text-base font-bold text-primary text-center mb-4 leading-tight">
+                Hoarding Cleanup Service<br />Steri-Clean Locations
+              </h2>
+              
+              <div className="mb-4">
+                <img 
+                  src="https://hoardingcleanup.com/i/u/10021204/i/Steri-Clean_Location_Header_Hoarding_Cleanup.png" 
+                  alt="Steri-Clean Location Header" 
+                  className="w-full"
+                />
+              </div>
+              
+              <nav aria-label="State locations">
+                <ul className="space-y-0.5 text-sm max-h-[400px] overflow-y-auto">
+                  <li><a href="https://hoardingcleanup.com/steri_clean_arizona_hoarding_cleanup" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Arizona</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_california" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors font-bold bg-primary/10">California</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_colorado" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Colorado</a></li>
+                  <li><a href="http://hoardingcleanup.com/steri_clean_connecticut" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Connecticut</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_delaware_hoarding_clean_up" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Delaware</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_florida/" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Florida</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_georgia" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Georgia</a></li>
+                  <li><a href="https://hoardingcleanup.com/idaho/" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Idaho</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_illinois" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Illinois</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_indiana" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Indiana</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_iowa/" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Iowa</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_kansas" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Kansas</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean1" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Kentucky</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_new_england/" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Maine</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_maryland" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Maryland</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_massachusetts/" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Massachusetts</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_michigan" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Michigan</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_minnesota/" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Minnesota</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_missouri" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Missouri</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_nebraska" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Nebraska</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri-clean-las-vegas" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Nevada</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_new_england/" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">New Hampshire</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_new_jersey" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">New Jersey</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_new_york" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">New York</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_north_carolina" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">North Carolina</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_ohio" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Ohio</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_oregon" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Oregon</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_pennsylvania" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Pennsylvania</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_rhode_island" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Rhode Island</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_south_carolina" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">South Carolina</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri-clean-south-dakota/" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">South Dakota</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_texas" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Texas</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_utah" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Utah</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_new_england/" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Vermont</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_virginia" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Virginia</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri_clean_washington" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">Washington</a></li>
+                  <li><a href="https://hoardingcleanup.com/steri-clean-west-virginia" className="block px-2 py-1 text-primary hover:bg-primary/10 rounded transition-colors">West Virginia</a></li>
+                </ul>
+              </nav>
 
-            {/* Partner Links */}
-            <div className="mt-6 space-y-4">
-              <a href="http://1800hoarders.com" target="_blank" rel="noopener noreferrer">
-                <img src="https://hoardingcleanup.com/i/u/10021204/i/Hoarders.com_Click_Link.jpg" alt="1800Hoarders.com" className="w-full border" />
-              </a>
-              <a href="http://challengingdisorganization.org" target="_blank" rel="noopener noreferrer">
-                <img src="https://hoardingcleanup.com/i/u/10021204/i/ICD.png" alt="Institute for Challenging Disorganization" className="w-full border" />
-              </a>
-              <a href="http://crimescenecleanupfranchise.com" target="_blank" rel="noopener noreferrer">
-                <img src="https://hoardingcleanup.com/i/u/10021204/i/Hoarding_Clean_Up_Help_2.png" alt="Crime Scene Cleanup Franchise" className="w-full" />
-              </a>
-            </div>
+              {/* Partner Links */}
+              <div className="mt-6 pt-4 border-t border-border space-y-3">
+                <a href="http://1800hoarders.com" target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-opacity">
+                  <div className="bg-secondary rounded-lg p-3 text-center">
+                    <span className="font-bold text-primary text-sm">Hoarders.com</span>
+                    <p className="text-[10px] text-muted-foreground mt-1">Hoarding Experts • Cleanup • Sorting<br />Organizing • Training • Lectures • Planning</p>
+                  </div>
+                </a>
+                <a href="http://challengingdisorganization.org" target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-opacity">
+                  <div className="bg-secondary rounded-lg p-3 text-center">
+                    <span className="font-bold text-primary text-xs">INSTITUTE FOR<br />CHALLENGING<br />DISORGANIZATION</span>
+                  </div>
+                </a>
+                <a href="http://crimescenecleanupfranchise.com" target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-opacity">
+                  <div className="bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-lg p-3 text-center">
+                    <span className="font-bold text-xs">Hoarding/Biohazard<br />Cleanup Franchise</span>
+                    <p className="text-[10px] mt-1 opacity-90">All States Available<br />Click Here for Info</p>
+                  </div>
+                </a>
+              </div>
             </div>
           </aside>
 
           {/* Main Content */}
-          <main id="main-content" className="flex-1 max-h-[calc(100vh-200px)] overflow-y-auto lg:max-h-none lg:overflow-visible">
+          <article className="lg:col-span-6 order-1 lg:order-2" id="main-content">
             {/* Hero Section */}
             <section className="text-center mb-8">
               <img 
@@ -1064,49 +1074,46 @@ const SteriCleanCalifornia = () => {
                 </div>
               </div>
             </section>
-          </main>
+          </article>
 
           {/* Right Sidebar */}
-          <aside className="lg:w-52 flex-shrink-0" aria-label="Interactive resources">
-            <div className="text-center mb-4">
-              <h2 className="text-xl font-bold text-[hsl(0,100%,30%)]">Interactive Hoarding Help<br/>Click Boxes Below</h2>
-            </div>
+          <aside className="lg:col-span-3 order-3" aria-labelledby="resources-heading">
+            <div className="bg-card rounded-xl shadow-lg p-5 sticky top-20">
+              <h2 id="resources-heading" className="text-base font-bold text-primary text-center mb-4 leading-tight">
+                Interactive Hoarding Help<br />Click Boxes Below
+              </h2>
 
-            <div className="space-y-4">
-              <Link to="/message-board" className="block">
-                <img 
-                  src="https://hoardingcleanup.com/i/u/10021204/i/Message_Boards2.jpg" 
-                  alt="Message Boards" 
-                  className="w-full border-2"
-                />
-              </Link>
-              <Link to="/chat-room" className="block">
-                <img 
-                  src="https://hoardingcleanup.com/i/u/10021204/i/Online_Support.png" 
-                  alt="Online Support Group" 
-                  className="w-full border-2"
-                />
-              </Link>
-              <Link to="/webinars" className="block">
-                <img 
-                  src="https://hoardingcleanup.com/i/u/10021204/i/Hoarding_Webinars.png" 
-                  alt="Hoarding Webinars" 
-                  className="w-full border-2"
-                />
-              </Link>
-              <Link to="/hoarders-tv-show" className="block">
-                <img 
-                  src="https://hoardingcleanup.com/zirw/1513095988160/i/u/10021204/i/Hoarders_Logo.png" 
-                  alt="Hoarders TV Show" 
-                  className="w-full max-w-[181px] mx-auto"
-                />
-              </Link>
-            </div>
+              <div className="space-y-4">
+                <Link to="/message-board" className="group block bg-secondary rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                  <div className="p-4 text-center">
+                    <span className="font-bold text-primary group-hover:text-accent transition-colors">Message Boards</span>
+                    <p className="text-xs text-muted-foreground mt-1">Connect with others</p>
+                  </div>
+                </Link>
+                <Link to="/chat-room" className="group block bg-secondary rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                  <div className="p-4 text-center">
+                    <span className="font-bold text-primary group-hover:text-accent transition-colors">Online Support Group</span>
+                    <p className="text-xs text-muted-foreground mt-1">Live chat support</p>
+                  </div>
+                </Link>
+                <Link to="/webinars" className="group block bg-secondary rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                  <div className="p-4 text-center">
+                    <span className="font-bold text-primary group-hover:text-accent transition-colors">Hoarding Webinars</span>
+                    <p className="text-xs text-muted-foreground mt-1">Learn from experts</p>
+                  </div>
+                </Link>
+                <Link to="/hoarders-tv-show" className="group block bg-secondary rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                  <div className="p-4 text-center">
+                    <span className="font-bold text-primary group-hover:text-accent transition-colors">Hoarders TV Show</span>
+                    <p className="text-xs text-muted-foreground mt-1">As seen on A&E</p>
+                  </div>
+                </Link>
+              </div>
 
-            {/* Visitor Counter */}
-            <div className="mt-6 text-center">
-              <div className="inline-block border border-gray-500 px-2 py-1">
-                <span className="font-mono text-lg">13946415</span>
+              {/* Visitor Counter */}
+              <div className="mt-6 pt-4 border-t border-border text-center">
+                <p className="text-xs text-muted-foreground mb-1">Visitors</p>
+                <span className="font-mono text-lg text-primary">13,946,415</span>
               </div>
             </div>
           </aside>
